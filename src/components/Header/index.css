@@ -1,0 +1,63 @@
+.popupContainer {
+  background-color: #ffffff;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.triggerButton {
+  background-color: none;
+  background: none;
+  outline: none;
+  border: none;
+  border-width: 0px;
+}
+.profileDetails {
+  background-color: red;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+}
+.profileAndCancel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileContainerMobile {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  text-align: center;
+  align-self: center;
+}
+.closeIcon {
+  align-self: start;
+}
+.logo {
+  margin-right: 15px;
+}
+.insta {
+  color: red;
+}
+.linkdin {
+  color: blue;
+}
+.twitter {
+  color: blue;
+  opacity: 0.5;
+}
+.contactList {
+  margin-left: 20px;
+  margin-top: 120px;
+}
