@@ -1,11 +1,11 @@
 import {ErrorContainer, Para, Head, Button, ErrorImg} from './styledComponent'
 
-import AppTheme from '../../context/Theme'
+import ThemeContext from '../../Context/ThemeContext'
 
 const ErrorImage = props => (
-  <AppTheme.Consumer>
+  <ThemeContext.Consumer>
     {value => {
-      const {activeTheme} = value
+      const {isDarkTheme} = value
 
       const refreshPage = () => {
         props.refresh()
@@ -13,10 +13,10 @@ const ErrorImage = props => (
 
       return (
         <ErrorContainer>
-          {activeTheme === 'light' ? (
-            <ErrorImg src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png" />
-          ) : (
+          {isDarkTheme ? (
             <ErrorImg src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png" />
+          ) : (
+            <ErrorImg src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png" />
           )}
           <Head>Oops! Something Went Wrong</Head>
           <Para>
@@ -27,7 +27,7 @@ const ErrorImage = props => (
         </ErrorContainer>
       )
     }}
-  </AppTheme.Consumer>
+  </ThemeContext.Consumer>
 )
 
 export default ErrorImage

@@ -3,7 +3,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
 }
 .triggerButton {
   background-color: none;
@@ -42,7 +42,7 @@
   align-self: center;
 }
 .closeIcon {
-  align-self: start;
+  align-self: flex-start;
 }
 .logo {
   margin-right: 15px;

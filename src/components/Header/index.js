@@ -31,7 +31,7 @@ import {
   MenuPopupMobile,
   MenuListMobile,
   IconContainer,
-} from './styledComponents'
+} from './styledComponent'
 
 import './index.css'
 
@@ -135,7 +135,7 @@ class Header extends Component {
                   </IconContainer>
 
                   <div className="profile" color={color}>
-                    <img src={profileImageUrl} />
+                    <img src={profileImageUrl} alt="profilePic" />
                     <h3> {name} </h3>
                     <p> {shortBio} </p>
                   </div>
@@ -210,9 +210,9 @@ class Header extends Component {
                         <div className="profileAndCancel">
                           {this.renderMobileprofile()}
 
-                          <div type="button" onClick={() => close()}>
+                          <IconContainer type="button" onClick={() => close()}>
                             <IoMdClose size={20} color={color} />
-                          </div>
+                          </IconContainer>
                         </div>
 
                         <MenuListMobile>

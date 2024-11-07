@@ -118,3 +118,4 @@ export const MenuListMobile = styled.div`
   justify-content: start;
   margin-top: 50px;
 `
+export const IconContainer = styled.div``

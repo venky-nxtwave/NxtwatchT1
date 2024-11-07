@@ -4,12 +4,7 @@ import {FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa'
 import MenuItemsList from '../MenuItemsList'
 
 import ThemeContext from '../../Context/ThemeContext'
-import {
-  SidebarContainer,
-  LogoIcons,
-  ContactUsContainer,
-  Text,
-} from './styledComponents'
+import {SidebarContainer, ContactUsContainer, Text} from './styledComponents'
 
 import './index.css'
 

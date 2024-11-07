@@ -14,7 +14,7 @@ import {
   ImageEl,
   ContentContainer,
   IconParas,
-} from './styledComponents'
+} from './styledComponent'
 
 import AppTheme from '../../context/Theme'
 
